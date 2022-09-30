@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="day13.testngexamples.GoogleApplicationWithBeforeAfterTest">
+        <methods>
+          <include name="startUp"/>
+          <include name="cleanUp"/>
+          <include name="testGoogleLandingPage"/>
+          <include name="testSearch"/>
+        </methods>
+      </class> <!-- day13.testngexamples.GoogleApplicationWithBeforeAfterTest -->
+      <class name="day13.testngexamples.Actitime_DependsOn">
+        <methods>
+          <include name="openBrowserAndAppURL"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- day13.testngexamples.Actitime_DependsOn -->
+      <class name="day13.testngexamples.GoogleApplicationWithBeforeAfter">
+        <methods>
+          <include name="testReportsPage"/>
+          <include name="cleanUp"/>
+          <include name="logout"/>
+          <include name="startUp"/>
+          <include name="login"/>
+          <include name="testVtigerHomePage"/>
+        </methods>
+      </class> <!-- day13.testngexamples.GoogleApplicationWithBeforeAfter -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
