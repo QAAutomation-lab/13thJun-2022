@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.737">
+    <testcase classname="Create lead in Vtiger application" name="Create new lead with name as QA" time="8.31">
+        <failure message="element click intercepted: Element &lt;div id=&quot;appnavigator&quot; class=&quot;col-sm-2 col-xs-2 cursorPointer app-switcher-container&quot; data-app-class=&quot;fa-dashboard&quot;&gt;...&lt;/div&gt; is not clickable at point (21, 21). Other element would receive the click: &lt;div id=&quot;messageBar&quot; class=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=105.0.5195.127)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'DESKTOP-LLLGMOJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0a5d3ff3a4322825d1dfa19047eb44cd" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user already in login page............................................passed
+And user login successfully with valid data.................................passed
+And click on navigation bar.................................................failed
+And go to Marketing and select Leads........................................skipped
+When click on Add Leads button and enter firstname as QA ,last as Champak ,number as 123 and click on save button.skipped
+And click on All link.......................................................skipped
+Then varify lead is created with Champak....................................skipped
+And close the browser.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div id="appnavigator" class="col-sm-2 col-xs-2 cursorPointer app-switcher-container" data-app-class="fa-dashboard">...</div> is not clickable at point (21, 21). Other element would receive the click: <div id="messageBar" class="">...</div>
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-LLLGMOJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a5d3ff3a4322825d1dfa19047eb44cd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at utilities.SeleniumUtility.clickOnElement(SeleniumUtility.java:84)
+	at stepdefinitions.VtigerLeadStepDef.click_on_navigation_bar(VtigerLeadStepDef.java:31)
+	at ✽.click on navigation bar(file:///F:/JavaWorkspace/SamplePageObjectWithBDD/src/test/resources/features/VtigerLead.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Create lead in Vtiger application" name="Delete all leads" time="29.917">
+        <failure message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a8db3f76e4700e653fb9ff27dea77fea)] -&gt; id: Leads_listView_massAction_LBL_DELETE] (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'DESKTOP-LLLGMOJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a8db3f76e4700e653fb9ff27dea77fea" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user already in login page............................................passed
+And user login successfully with valid data.................................passed
+And click on navigation bar.................................................passed
+And go to Marketing and select Leads........................................passed
+When click on select all leads checkbox.....................................passed
+And click on delete logo....................................................failed
+And user will get a popup to comfirm deletion, select Yes...................skipped
+Then varify that all leads deleted..........................................skipped
+And close the browser.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a8db3f76e4700e653fb9ff27dea77fea)] -> id: Leads_listView_massAction_LBL_DELETE] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-LLLGMOJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a8db3f76e4700e653fb9ff27dea77fea
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at utilities.SeleniumUtility.waitForElementToBeClickable(SeleniumUtility.java:251)
+	at utilities.SeleniumUtility.clickOnElement(SeleniumUtility.java:83)
+	at webpages.VtigerLeadsPage.clickOnDeleteLogo(VtigerLeadsPage.java:89)
+	at stepdefinitions.VtigerLeadStepDef.click_on_delete_logo(VtigerLeadStepDef.java:73)
+	at ✽.click on delete logo(file:///F:/JavaWorkspace/SamplePageObjectWithBDD/src/test/resources/features/VtigerLead.feature:22)
+]]></failure>
+    </testcase>
+</testsuite>

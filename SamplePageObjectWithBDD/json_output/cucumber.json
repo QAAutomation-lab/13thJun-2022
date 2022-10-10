@@ -1,0 +1,273 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4096715900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user already in login page",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2934823500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login successfully with valid data",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_login_successfully_with_valid_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cdiv id\u003d\"appnavigator\" class\u003d\"col-sm-2 col-xs-2 cursorPointer app-switcher-container\" data-app-class\u003d\"fa-dashboard\"\u003e...\u003c/div\u003e is not clickable at point (21, 21). Other element would receive the click: \u003cdiv id\u003d\"messageBar\" class\u003d\"\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d105.0.5195.127)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-LLLGMOJ\u0027, ip: \u0027192.168.1.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\Asus\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0a5d3ff3a4322825d1dfa19047eb44cd\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)\r\n\tat utilities.SeleniumUtility.clickOnElement(SeleniumUtility.java:84)\r\n\tat stepdefinitions.VtigerLeadStepDef.click_on_navigation_bar(VtigerLeadStepDef.java:31)\r\n\tat ✽.click on navigation bar(file:///F:/JavaWorkspace/SamplePageObjectWithBDD/src/test/resources/features/VtigerLead.feature:6)\r\n",
+              "duration": 1220828400,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "click on navigation bar",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_navigation_bar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1989700,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "go to Marketing and select Leads",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.go_to_marketing_and_select_leads()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T14:38:07.515Z",
+        "line": 17,
+        "name": "Create new lead with name as QA",
+        "description": "",
+        "id": "create-lead-in-vtiger-application;create-new-lead-with-name-as-\u003cfirstname\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on Add Leads button and enter firstname as QA ,last as Champak ,number as 123 and click on save button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "QA",
+                  "offset": 49
+                },
+                {
+                  "val": "Champak",
+                  "offset": 61
+                },
+                {
+                  "val": "123",
+                  "offset": 80
+                }
+              ],
+              "location": "stepdefinitions.VtigerLeadStepDef.enter_firstname_as_last_as_number_as_and_click_on_save_button(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "click on All link",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "varify lead is created with Champak",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Champak",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.VtigerLeadStepDef.varify_lead_is_created_with(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2993800,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "close the browser",
+            "match": {
+              "location": "stepdefinitions.ActitimeStepDef.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3375380600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user already in login page",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3307033500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user login successfully with valid data",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_login_successfully_with_valid_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 932039700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on navigation bar",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_navigation_bar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1832387900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to Marketing and select Leads",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.go_to_marketing_and_select_leads()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-02T14:38:15.887Z",
+        "line": 20,
+        "name": "Delete all leads",
+        "description": "",
+        "id": "create-lead-in-vtiger-application;delete-all-leads",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 212430400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click on select all leads checkbox",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_select_all_leads_checkbox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a8db3f76e4700e653fb9ff27dea77fea)] -\u003e id: Leads_listView_massAction_LBL_DELETE] (tried for 20 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-LLLGMOJ\u0027, ip: \u0027192.168.1.4\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\Asus\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a8db3f76e4700e653fb9ff27dea77fea\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)\r\n\tat utilities.SeleniumUtility.waitForElementToBeClickable(SeleniumUtility.java:251)\r\n\tat utilities.SeleniumUtility.clickOnElement(SeleniumUtility.java:83)\r\n\tat webpages.VtigerLeadsPage.clickOnDeleteLogo(VtigerLeadsPage.java:89)\r\n\tat stepdefinitions.VtigerLeadStepDef.click_on_delete_logo(VtigerLeadStepDef.java:73)\r\n\tat ✽.click on delete logo(file:///F:/JavaWorkspace/SamplePageObjectWithBDD/src/test/resources/features/VtigerLead.feature:22)\r\n",
+              "duration": 20250671100,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "click on delete logo",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.click_on_delete_logo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user will get a popup to comfirm deletion, select Yes",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.user_will_get_a_popup_to_comfirm_deletion_select_yes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "varify that all leads deleted",
+            "match": {
+              "location": "stepdefinitions.VtigerLeadStepDef.varify_that_all_leads_deleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "close the browser",
+            "match": {
+              "location": "stepdefinitions.ActitimeStepDef.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create lead in Vtiger application",
+    "description": "",
+    "id": "create-lead-in-vtiger-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/VtigerLead.feature",
+    "tags": []
+  }
+]
